@@ -142,3 +142,19 @@ export const getUsers = async () => {
     }, 1000);
   });
 };
+
+export const getUserById = (id: string): User | undefined => {
+  return users.find((user) => user.id === id);
+};
+
+export const getUserFriends = (userId: string): User[] => {
+  const user = getUserById(userId);
+  if (!user) return [];
+
+  return user.friendIds
+    .map((friendId) => {
+      const friend = getUserById(friendId);
+      return friend!;
+    })
+    .filter(Boolean);
+};

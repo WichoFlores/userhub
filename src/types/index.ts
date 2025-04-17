@@ -8,4 +8,5 @@ export interface User {
   jobTitle: string;
   company: string;
   friendIds: string[];
+  friends?: User[];
 }

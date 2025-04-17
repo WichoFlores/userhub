@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Briefcase, Mail, MapPin, UserCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { FriendsList } from "./FriendList";
 
 export function UserProfile({ user }: { user: User }) {
   const containerVariants = {
@@ -41,7 +42,7 @@ export function UserProfile({ user }: { user: User }) {
             <ArrowLeft className="h-4 w-4" />
           </Link>
         </Button>
-        <h1 className="text-2xl font-bold">Profile</h1>
+        <p className="text-xl font-medium">return to directory</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -100,6 +101,22 @@ export function UserProfile({ user }: { user: User }) {
               </div>
             </CardContent>
           </Card>
+        </motion.div>
+
+        <motion.div variants={itemVariants}>
+          {user?.friends && user.friends.length > 0 ? (
+            <FriendsList friends={user.friends} />
+          ) : (
+            <Card>
+              <CardHeader className="flex flex-row items-center gap-2">
+                <UserCircle2 className="h-5 w-5 text-primary" />
+                <h3 className="font-medium">Connections</h3>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">No connections yet.</p>
+              </CardContent>
+            </Card>
+          )}
         </motion.div>
       </div>
     </motion.div>

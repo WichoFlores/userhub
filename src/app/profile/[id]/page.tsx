@@ -12,7 +12,10 @@ export default async function ProfilePage({
 }: {
   params: { id: string };
 }) {
-  const user = await fetchUserProfile(params.id);
+  // Added await because TurboPack issues a warning when using params directly
+  const { id } = await params;
+
+  const user = await fetchUserProfile(id);
 
   return <UserProfile user={user} />;
 }

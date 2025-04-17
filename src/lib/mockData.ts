@@ -10,7 +10,7 @@ export const users: User[] = [
     bio: "Product designer with a passion for creating beautiful, functional interfaces. I love hiking and photography in my free time.",
     jobTitle: "Senior Product Designer",
     company: "DesignMaster",
-    friendIds: ["2", "3", "5"],
+    friendIds: ["3", "5"],
   },
   {
     id: "2",
@@ -21,7 +21,7 @@ export const users: User[] = [
     bio: "Full-stack developer specializing in React and Node.js. Coffee enthusiast and amateur chess player.",
     jobTitle: "Senior Developer",
     company: "TechFusion",
-    friendIds: ["1", "4"],
+    friendIds: ["4"],
   },
   {
     id: "3",

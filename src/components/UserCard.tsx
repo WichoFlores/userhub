@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { MapPin } from "lucide-react";
 import { motion, useAnimation } from "framer-motion";
+import { Badge } from "./ui/badge";
 import Link from "next/link";
 
 interface UserCardProps {
@@ -50,6 +51,12 @@ export function UserCard({ user }: UserCardProps) {
                 </p>
 
                 <div className="flex flex-wrap justify-start items-center gap-2 mt-2">
+                  <Badge variant="secondary" className="text-xs">
+                    {user.friendIds?.length}{" "}
+                    {user.friendIds?.length === 1
+                      ? "connection"
+                      : "connections"}
+                  </Badge>
                   <span className="inline-flex items-center text-xs text-muted-foreground">
                     <MapPin className="h-3 w-3 mr-1" />
                     {user.location}

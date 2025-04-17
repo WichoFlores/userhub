@@ -134,3 +134,11 @@ export const users: User[] = [
     friendIds: ["8", "10"],
   },
 ];
+
+export const getUsers = async () => {
+  return new Promise<User[]>((resolve) => {
+    setTimeout(() => {
+      resolve(users);
+    }, 1000);
+  });
+};

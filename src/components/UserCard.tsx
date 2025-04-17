@@ -22,9 +22,8 @@ export function UserCard({ user }: UserCardProps) {
         onHoverStart={() => avatarControls.start({ rotate: 5 })}
         onHoverEnd={() => avatarControls.start({ rotate: 0 })}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        className="h-[172px]"
       >
-        <Card className="overflow-hidden h-full py-0">
+        <Card className="overflow-hidden h-full min-h-[182px] py-0">
           <div className="h-3 bg-gradient-to-r from-primary/30 to-primary/10"></div>
           <CardContent className="p-6">
             <div className="flex items-center text-left flex-row gap-4">

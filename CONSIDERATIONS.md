@@ -6,6 +6,12 @@ Build a small-scale web app that lists users, enables profile navigation, and di
 
 ---
 
+## 💡 Original Idea
+
+Initially, I had big plans after reading the instructions. I considered integrating a real database (Neon/Drizzle), implementing authentication to support user sessions (Next Auth), and adding friend request functionality (send/accept/reject) using both server actions and API routes. But I soon realized this went beyond the intended scope, and the instructions clearly emphasized keeping it focused. So I shifted to an MVP mindset, keeping things clean, simple, and aligned with the core requirements.
+
+---
+
 ## 📐 Architecture Decisions
 
 - **App Router (Next.js 15)**: Leveraged the latest App Router features, such as server and client component separation and route segments.

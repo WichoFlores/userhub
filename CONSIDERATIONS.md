@@ -60,6 +60,18 @@ interface User {
 
 ---
 
+## 🎯 Challenges
+
+- **NextJS Evolving Nature**: It feels like there's a new NextJS version every week. It's rough to keep up with the changes!
+- **Dynamic Routing Complexity**: Setting up dynamic API routes and ensuring the right data was fetched for user profiles was a bit tricky because of the data fetching patterns NextJS expects. I had to be extra careful to avoid mismatches or errors along the way.
+- **Friend Relationship Resolution**: Simulating bidirectional relationships with mock data turned out to be more challenging than I expected because I had to modify them manually.
+- **Cache Management**: I initially overlooked the need to revalidate the user list to prevent stale data from being served.
+- **Server vs Client Component Balance**: Deciding which components should be server-rendered versus client-rendered. I had to plan it out before even starting, specially because I wanted to use Framer Motion.
+- **TypeScript Integration**: Making sure everything was type-safe across API routes, components, and mock data took some extra effort. I think there might be better ways to do it.
+- **Animation Performance**: Getting smooth animations with Framer Motion while keeping things optimized and snappy.
+
+---
+
 ## 🙋 Why This Design
 
 - The structure is intentionally close to production-ready without overengineering.

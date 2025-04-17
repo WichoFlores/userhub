@@ -2,7 +2,7 @@ import { UserGrid } from "@/components/UserGrid";
 
 async function fetchUsers() {
   const res = await fetch("http://localhost:3000/api/users", {
-    cache: "no-store",
+    cache: "force-cache",
   });
   return res.json();
 }

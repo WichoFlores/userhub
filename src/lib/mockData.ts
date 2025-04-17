@@ -21,7 +21,7 @@ export const users: User[] = [
     bio: "Full-stack developer specializing in React and Node.js. Coffee enthusiast and amateur chess player.",
     jobTitle: "Senior Developer",
     company: "TechFusion",
-    friendIds: ["1", "4", "6"],
+    friendIds: ["1", "4"],
   },
   {
     id: "3",
@@ -43,7 +43,7 @@ export const users: User[] = [
     bio: "Backend engineer specializing in distributed systems. Enjoys hiking the Pacific Northwest and craft beer.",
     jobTitle: "Backend Engineer",
     company: "CloudScale",
-    friendIds: ["2", "6", "8"],
+    friendIds: ["2", "8"],
   },
   {
     id: "5",
@@ -65,7 +65,7 @@ export const users: User[] = [
     bio: "DevOps engineer passionate about automation and efficiency. Mountain biker and outdoor enthusiast.",
     jobTitle: "DevOps Lead",
     company: "InfraCore",
-    friendIds: ["2", "4", "10"],
+    friendIds: [],
   },
   {
     id: "7",
@@ -109,7 +109,7 @@ export const users: User[] = [
     bio: "Product manager with a background in consumer psychology. Surfer and podcast host.",
     jobTitle: "Product Manager",
     company: "UserFirst",
-    friendIds: ["6", "8", "12"],
+    friendIds: ["8", "12"],
   },
   {
     id: "11",

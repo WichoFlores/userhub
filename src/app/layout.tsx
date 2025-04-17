@@ -23,11 +23,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col mx-auto`}
       >
-        {children}
+        <main className="flex-1 bg-primary-foreground/40">
+          <div className="max-w-[1280px] mx-auto p-8">{children}</div>
+        </main>
       </body>
     </html>
   );

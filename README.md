@@ -1,4 +1,4 @@
-User Profile Web App
+# UserHub Web App
 
 This project is a technical test. It's a lightweight web application built with **Next.js 15**, designed to demonstrate API routing, dynamic pages, and mock data handling in a clean, scalable architecture.
 
